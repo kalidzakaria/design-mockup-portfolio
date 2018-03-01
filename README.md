@@ -1,2 +1,2 @@
 # design-mockup-portfolio
-NanoDegreee Progect
+NanoDegreee Project
