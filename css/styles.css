@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  min-height: 120px;
+  border-bottom: 5px solid #02b3e4;
+  padding: 2em 0.5em 0;
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-logo {
+  width: 20%;
+  min-width: 58px;
+  max-width: 115px;
+}
+
+.header-title {
+  display: inline-block;
+  text-align: right;
+  float: right;
+  width: 70%;
+  min-width: 75px;
+  font-size: 0.9em;
+}
+
+.header__text {
+  margin: 0;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  padding-top: 1em;
+}
+.code-img {
+  width: 100%;
+  background: url('../img/code-big.jpg') center/cover no-repeat;
+  height: 250px;
+}
+
+.featured-work {
+  color: #7d97ad;
+}
+
+.featured-text {
+  font-size: 1.5em;
+}
+
+.featured-img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.snippet {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.snippet-img{
+  width: 50%;
+  float: left;
+}
+
+.snippet-comment {
+  width: 50%;
+  float: left;
+  padding-left: 0.5em;
+}
+
+.snippet-title{
+  font-size: 1.25em;
+  margin: 0;
+  padding-bottom: 0.5em;  
+}
+
+.snippet-paragrapg {
+  font-size: 1em;
+  margin: 0;
+}
+
+.snippet-title a {
+  text-decoration: none;
+  color: #2d3c49;
+}
+
+.snippet-title a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 450px) {
+  .header-title {
+    font-size: 1.25em;
+  }
+  .snippet-title a {
+    padding: 0;
+ }
+}
+
+@media screen and (min-width: 700px) {
+  .header-title {
+    font-size: 1.7em;
+  }
+  .snippet-title{
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: left;
+  }
+  .snippet-paragrapg {
+    font-size: 1.25em;
+    text-align: left;
+  }
+  .featured-text {
+    font-size: 1.5em;
+  }
+  .snippet-title a {
+    padding: 0.5em 0;
+ }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+  }
+  .featured-img {
+    flex-direction: row;
+	justify-content: space-between;
+  }
+
+  .snippet {
+    width: 30%;
+  }
+  .snippet-img {
+    width: 100%;
+  }
+  .snippet-comment {
+    width: 100%;
+  }
+}
